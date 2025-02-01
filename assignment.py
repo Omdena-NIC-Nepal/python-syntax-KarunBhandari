@@ -78,7 +78,7 @@ def set_operations(list1, list2):
     result = set(list1)
     for item in list2:
      temp = set()
-    if(item in result):
+     if(item in result):
         temp.add(item)
 
     return temp
