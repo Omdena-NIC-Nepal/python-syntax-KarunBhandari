@@ -73,15 +73,15 @@ def set_operations(list1, list2):
     Returns:
         set: Common elements
     """
-    if not list1 or list2:
+    if not list1 and not list2:
         return set()
     result = set(list1)
+    temp = set()
     for item in list2:
-     temp = set()
      if(item in result):
         temp.add(item)
-
     return temp
+print(set_operations([1, 2, 3], [2, 3, 4]))
     
 
 def arithmetic_ops(a, b):
