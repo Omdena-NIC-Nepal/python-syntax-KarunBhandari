@@ -76,11 +76,10 @@ def set_operations(list1, list2):
     if not list1 or list2:
         return set()
     result = set(list1)
-    for basket in list2:
+    for item in list2:
      temp = set()
-     for item in basket:
-        if(item in result):
-            temp.add(item)
+    if(item in result):
+        temp.add(item)
 
     return temp
     
